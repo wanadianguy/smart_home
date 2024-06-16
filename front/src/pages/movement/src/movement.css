@@ -1,0 +1,29 @@
+.movement-page {
+    margin-top: 6rem;
+}
+
+.movement-day-selector {
+    display: flex;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.movement-page-power-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.movement-page-list {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: left;
+    padding: 0;
+}
+
+.movement-page-list-item {
+    list-style-type: none;
+    font-size: 1.2rem;
+    font-weight: normal;
+}

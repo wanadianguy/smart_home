@@ -1,0 +1,30 @@
+.brightness-display-title {
+    display: block;
+    position: absolute;
+    font-size: 0.8rem;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+
+.brightness-display-data {
+    margin-left: 2rem;
+    font-size: 4rem;
+    font-weight: 400;
+    display: inline-flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.brightness-display-data-black-icon {
+    display: block;
+    background: url("../assets/black-sun.svg");
+    width: 10rem;
+    height: 10rem;
+}
+
+.brightness-display-data-white-icon {
+    display: block;
+    background: url("../assets/white-sun.svg");
+    width: 10rem;
+    height: 10rem;
+}

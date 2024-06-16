@@ -1,0 +1,11 @@
+.input-number-container {
+    background-color: white;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem;
+    height: 1.5rem;
+    padding-left: 0.2rem;
+}

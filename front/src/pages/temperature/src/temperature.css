@@ -1,0 +1,16 @@
+.temperature-page {
+    margin-top: 6rem;
+}
+
+.temperature-day-selector {
+    display: flex;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.temperature-page-power-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}

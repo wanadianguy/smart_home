@@ -1,0 +1,51 @@
+.temperature-display-title {
+    display: block;
+    position: absolute;
+    font-size: 0.8rem;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+
+.temperature-display-data {
+    margin-left: 2rem;
+    font-size: 4rem;
+    font-weight: 400;
+    display: inline-flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.very-low-temperature-display-icon {
+    display: block;
+    background: url("../assets/very-low-thermometer.svg");
+    width: 10rem;
+    height: 10rem;
+}
+
+.low-temperature-display-icon {
+    display: block;
+    background: url("../assets/low-thermometer.svg");
+    width: 10rem;
+    height: 10rem;
+}
+
+.medium-temperature-display-icon {
+    display: block;
+    background: url("../assets/medium-thermometer.svg");
+    width: 10rem;
+    height: 10rem;
+}
+
+.high-temperature-display-icon {
+    display: block;
+    background: url("../assets/high-thermometer.svg");
+    width: 10rem;
+    height: 10rem;
+}
+
+.very-high-temperature-display-icon {
+    display: block;
+    background: url("../assets/very-high-thermometer.svg");
+    width: 10rem;
+    height: 10rem;
+}

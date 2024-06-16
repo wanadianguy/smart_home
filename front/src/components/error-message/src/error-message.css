@@ -1,0 +1,32 @@
+.error-message-container {
+    flex-wrap: wrap;
+    max-width: 45rem;
+    min-width: 18rem;
+    border: 2px solid red;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    cursor: not-allowed;
+}
+
+.error-message-icon {
+    background: url("../assets/error.svg");
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+.error-message-title {
+    align-items: center;
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.error-message-content {
+    display: block;
+    color: black;
+    font-size: 1.2rem;
+    margin-left: 3rem;
+}

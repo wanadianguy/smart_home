@@ -1,0 +1,23 @@
+.data-display-container, .data-display-button-container {
+    background-color: white;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem;
+    position: relative;
+}
+
+.data-display-button-container {
+    cursor: pointer;
+}
+
+.data-display-button-container:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+}
+
+.data-display-button-container:active {
+    box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0 18px 36px -18px inset;
+}

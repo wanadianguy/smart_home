@@ -1,0 +1,74 @@
+name: "smart_home"
+services:
+  broker:
+    container_name: "broker"
+    image: hivemq/hivemq4:4.27.0
+    ports:
+      - "8081:8080"
+      - "1883:1883"
+    networks:
+      - "broker"
+    profiles:
+      - all
+      - backend
+      - broker
+
+  database:
+    container_name: "database"
+    build:
+      context: "./back"
+      dockerfile: "database.Dockerfile"
+    ports:
+      - "27017:27017"
+    networks:
+      - "database"
+    profiles:
+      - all
+      - backend
+      - api
+      - database
+
+  api:
+    container_name: "api"
+    depends_on:
+      - database
+    build:
+      context: "./back"
+      dockerfile: "api.Dockerfile"
+    ports:
+      - "8082:8080"
+    networks:
+      - "broker"
+      - "database"
+      - "api"
+    profiles:
+      - all
+      - backend
+      - api
+
+  frontend:
+    container_name: "frontend"
+    depends_on:
+      - api
+    build:
+      context: "./front"
+      dockerfile: "frontend.Dockerfile"
+    env_file:
+      - front/.env.production
+    ports:
+      - "3000:3000"
+    networks:
+      - "frontend"
+    profiles:
+      - all
+      - frontend
+
+networks:
+  broker:
+    driver: bridge
+  database:
+    driver: bridge
+  api:
+    driver: bridge
+  frontend:
+    driver: bridge

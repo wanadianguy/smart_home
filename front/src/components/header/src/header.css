@@ -1,0 +1,30 @@
+.header-container {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    padding: 0.5rem;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: "logo nav";
+    background-color: #282c34;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header-logo {
+    cursor: pointer;
+    border: none;
+    grid-area: logo;
+    width: 4rem;
+    height: 4rem;
+    background: url("assets/logo.svg");
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    margin-right: 4rem;
+    color: white;
+    font-size: 2rem;
+    height: 4rem;
+}

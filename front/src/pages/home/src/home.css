@@ -1,0 +1,16 @@
+.home-page {
+    margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-page-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-page-list-item {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem;
+}

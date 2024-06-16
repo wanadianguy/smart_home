@@ -1,0 +1,10 @@
+.brightness-page {
+    margin-top: 6rem;
+    display: flex;
+}
+
+.brightness-page-power-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
